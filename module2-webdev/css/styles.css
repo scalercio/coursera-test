@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  /*margin: 0px;*/
+}
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.row {
+    width: 100%;
+}
+  /********** Base styles **********/
+h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.75em;
+}
+p {
+  border: 1px solid black;
+  margin-top: 0;
+  width: 35%;
+  text-align: center;
+  font-size: 1.25em;
+}
+#p1 {
+  background-color: #A52A2A;
+  position: absolute;
+  top: 0;
+  right: 0;  
+}
+#p2 {
+  background-color: #DEB887;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#p3 {
+  background-color: rgb(197, 189, 71);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+section {
+  background-color: rgb(130, 127, 134);
+  border: 1px solid black;
+  padding: 30px 20px 10px 20px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .row {
+    display: flex; /* equal height of the children */
+  }
+  .col-lg-4 {
+    flex: 1;
+    float: left;
+  }
+  .col-lg-4 {
+    width: 30.00%;
+    margin: 1.66%;
+  }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 45%;
+    margin: 2.5%;
+  }
+  .col-md-12 {
+    width: 95%;
+    margin: 2.5%;
+  }
+}
+  @media (max-width: 767px) {
+  .col-sm-12 {
+    width: 95%;
+    margin: 2.5%;
+  }
+}
